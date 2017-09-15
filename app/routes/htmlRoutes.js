@@ -8,11 +8,11 @@ var htmlRoutes = function(req, res){
     var chosen = req.params.route;
 
     if (!chosen){
-        res.sendFile(path.join(__dirname, "index.html"));
+        res.sendFile(path.join(__dirname, "../public/index.html"));
     } else if(chosen === 'reservations') {
-        res.sendFile(path.join(__dirname, "reservations.html"));
+        res.sendFile(path.join(__dirname, "../public/reservations.html"));
     } else if(chosen === 'waitlist') {
-        res.sendFile(path.join(__dirname, "waitlist.html"));
+        res.sendFile(path.join(__dirname, "../public/waitlist.html"));
     }
 }
 
