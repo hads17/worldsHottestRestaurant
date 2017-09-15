@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 // require route functions
 var htmlRoutes = require('./app/routes/htmlRoutes.js');
 var apiRoutes = require('./app/routes/apiRoutes.js');
+var waitlistArray = require('./app/data/waitlist.js');
 
 // sets up express
 var app = express();
@@ -36,7 +37,7 @@ app.post('/api/new', function(req, res){
 
     console.log(newReservation);
 
-    characters.push(newReservation);
+    waitlistArray.push(newReservation);
 
     res.json(newReservation);
 });

@@ -1,1 +1,3 @@
-var watilistArray = [];
+var waitlistArray = [];
+
+module.exports = waitlistArray;
