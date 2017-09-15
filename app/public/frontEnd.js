@@ -14,3 +14,4 @@
       console.log(data);
       alert("Adding character...");
     });
+  });
